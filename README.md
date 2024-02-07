@@ -2,4 +2,4 @@
 
 ## Platform for Movies and Tv series created by myAnal
 
-![image](img/logocorp.webp)
+<img src="img/logocorp.webp" width="500" height="auto">
