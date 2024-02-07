@@ -223,4 +223,4 @@ async function displayAccount(){
     avatar.src = `https://image.tmdb.org/t/p/w500${account.avatar.tmdb.avatar_path}" alt="${account.username}`;
 }
 
-displayAccount()
+displayAccount();

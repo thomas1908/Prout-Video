@@ -225,7 +225,8 @@ async function displayReviewMovie(id){
         let reviewContainer = document.createElement('div');
         let main = document.querySelector('main');
         let src = '';
-        if (!element.author_details.avatar_path === null){
+        if (element.author_details.avatar_path != null){
+            console.log('feur')
             src = `https://image.tmdb.org/t/p/w500${element.author_details.avatar_path}`
         }
         else{
