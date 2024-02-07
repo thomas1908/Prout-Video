@@ -240,15 +240,12 @@ async function loadNextPage() {
     }
 }
 
-// Add a scroll event listener
 window.addEventListener('scroll', function () {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // User has reached the bottom of the page
         loadNextPage();
     }
 });
 
-// Initial load of the first page
 displayTrendMovie();
 
 async function getAccount(){

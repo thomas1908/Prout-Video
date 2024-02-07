@@ -165,6 +165,9 @@ async function displayMovie(input) {
     function appendMovies(results) {
         let main = document.querySelector('main');
         results.forEach(movie => {
+            if (!movie.poster_path) {
+                return;
+            }
             let movieId = movie.id;
             let movieDiv = document.createElement('div');
             movieDiv.className = 'searchMovieDiv';
@@ -184,7 +187,6 @@ async function displayMovie(input) {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (windowHeight + scrollTop >= scrollHeight) {
-            console.log("Vous êtes arrivé en bas de la page !");
             pageNumber++;
             if (pageNumber > pageNumberSearch) {
                 window.onscroll = null;
