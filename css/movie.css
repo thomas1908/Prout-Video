@@ -1,0 +1,172 @@
+*{
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    display:block;
+    margin: 0;
+    top:0;
+    left:0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#accountAvatar{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 15px;
+    margin-top: 20px;
+    border : 1px solid #feeb01;
+}
+
+div#logo img{
+    position: relative;
+    left: 80%;
+    width: 25%;
+}
+
+.header-buttons button:nth-child(4), .header-buttons button:nth-child(5){
+    position: absolute;
+    right: 5%;
+}
+
+.header-buttons div:nth-child(6){
+    position: absolute;
+    right: 0;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    color: #feeb01;
+    margin: 15px;
+    background-color: #171717;
+    padding: 0.8em 1.4em;
+    border: none;
+    border-radius: .6rem;
+    transition: 1.5s ease;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#buttonDelete{
+    display: none;
+}
+
+#redirectssobutton{
+    display: block;
+}
+
+button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 42px;
+    width: 42px;
+    background-color: #feeb01;
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+}
+
+button span:nth-child(6) {
+    position: relative;
+}
+
+button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+}
+
+button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+}
+
+button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+}
+
+button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+}
+
+button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+}
+
+button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(5);
+    transition: 1.5s ease;
+}  
+
+button:hover {
+    color: #171717;
+    transition: 1.5s ease;
+}
+
+.container{
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.col-6{
+    display: flex;
+    justify-content: center;
+}
+
+.container img{
+    margin: 2% 0 2% 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2%;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15% 0 15%;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5%;
+    text-align: center;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 2% 0 15%;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5%;
+    text-align: left;
+}
+
+.review img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 15px 15px 15px 0;
+    margin-top: 20px;
+    border : 1px solid #feeb01;
+}
